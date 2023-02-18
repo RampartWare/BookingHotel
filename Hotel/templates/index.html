@@ -1,0 +1,173 @@
+{% extends "base.html" %}
+{% block title %}
+    BookingKhram
+{% endblock %}
+{% block content %}
+    <div class="container-top-content">
+        <div class="slider-container">
+            <div class="card-slider">
+              <div class="card"><img src="static/image/prosilde1.png"></div>
+              <div class="card"><img src="static/image/prosilde2.png"></div>
+              <div class="card"><img src="static/image/prosilde3.png"></div>
+              <div class="card"><img src="static/image/prosilde4.png"></div>
+              <div class="card"><img src="static/image/prosilde5.png"></div>
+              <div class="card"><img src="static/image/prosilde6.png"></div>
+              <div class="card"><img src="static/image/prosilde1.png"></div>
+            </div>
+            <button class="btn-prev"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="btn-next"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+    <div class="container-data-index">
+        <div class="container-index-book">
+            <div class="ibparent">
+                <div class="ibdiv1">
+                    <form>
+                        <label for="gsearch"><h4>ค้นหา:</h4></label>
+                        <input list="browsers" name="browser">
+                        <datalist id="browsers">
+                            <option value="Coco view hotel">
+                            <option value="โรงแรมอัมพวารี">
+                            <option value="โรงแรมอลงกรณ์ บาย เอสบี">
+                            <option value="เดอะเกรซ อัมพวา รีสอร์ท">
+                            <option value="โรงแรมรอยัลแลนด์ แม่กลอง">
+                        </datalist>
+                    </form>
+                </div>
+                <div class="ibdiv2">
+                    <h4>ชื่อโรแรม</h4>
+                </div>
+                <div class="ibdiv3">
+                    <h4>รายละเอียดการจองห้องพัก</h4>
+                    <form>
+                        <label for="gsearch"><h4>ประเภท</h4></label>
+                        <input list="classroom" name="classroom">
+                        <datalist id="classroom">
+                            <option value="Vip">
+                            <option value="ธรรมดา">
+                        </datalist>
+                        <label for="gsearch"><h4>เช็คอิน</h4></label>
+                        <input type="date" id="birthday" name="birthday">
+                        <label for="gsearch"><h4>เช็คเอาท์</h4></label>
+                        <input type="date" id="birthday" name="birthday">
+                        <label for="quantity">จำนวนผู้เข้าพัก</label>
+                        <input type="number" id="quantity" name="quantity" min="1" max="">
+                        <input type="submit" value="จอง">
+                    </form>
+                 </div>
+            </div>
+        </div>
+        <div class="container-index-promotion">
+            <div class="ipmparent">
+                <div class="ipmdiv1">
+                    <h2>⭐ โปรพิเศษ จากโรงแรมดัง ⭐</h2> 
+                </div>
+                <div class="ipmdiv2"> 
+                    <img src="static/image/Hpro1.png">
+                    <h4>Coco view hotel</h4>
+                    <p>THB:1268</p>
+                </div>
+                <div class="ipmdiv3">
+                    <img src="static/image/Hpro2.png">
+                    <h4>โรงแรมอัมพวารี</h4>
+                    <p>THB:1000</p>
+                 </div>
+                <div class="ipmdiv4">
+                    <img src="static/image/Hpro3.png"> 
+                    <h4>โรงแรมอลงกรณ์ บาย เอสบี</h4>
+                    <p>THB:626</p>
+                </div>
+                <div class="ipmdiv5">
+                    <img src="static/image/Hpro4.png"> 
+                    <h4>เดอะเกรซ อัมพวา รีสอร์ท</h4>
+                    <p>THB:1500</p>
+                </div>
+                <div class="ipmdiv6">
+                    <img src="static/image/Hpro5.png"> 
+                    <h4>โรงแรมรอยัลแลนด์ แม่กลอง</h4>
+                    <p>THB:442</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-index-partner">
+            <div class="ipparent">
+                <div class="ipdiv1">
+                    <h3>พันธมิตรผู้ให้บริการชำระเงิน</h3> 
+                    <p>เราร่วมมือกับผู้ให้บริการชำระเงินที่น่าเชื่อถือ เพื่อให้คุณมั่นใจว่าการชำระเงินของคุณสะดวกและปลอดภัย</p>
+                </div>
+                <div class="ipdiv2">
+                    <img src="static/image/bankbangkok.png" class="img-bank pbg-bank">
+                    <img src="static/image/bankkasrikhon.png" class="img-bank pbg-bank">
+                    <img src="static/image/bankkongsri.png" class="img-bank pbg-bank">
+                    <img src="static/image/bankthai.png" class="img-bank pbg-bank">
+                    <img src="static/image/bankthaipanit.png" class="img-bank pbg-bank">
+                    <img src="static/image/bankvisa.png" class="img-bank pbg-bank">
+                </div>
+            </div>
+        </div>
+        <div class="container-index-whybook">
+            <div class="iwparent">
+                <div class="iwdiv1">
+                    <h2 class="wh-topic">ทำไมต้องจองกับ BookingKhram & Lifestyle Super App?</h2> 
+                </div>
+                <div class="iwdiv2"> 
+                    <img src="static/image/wh1.png" class="wimg-bank wbg-bank">
+                    <h3>จองและจ่ายง่ายๆ</h3>
+                    <p>สะดวก ง่าย แค่ปลายนิ้ว ไม่ว่าจะจองเที่ยวบินหรือโรงแรม ก็สามารถวางแผน จอง จ่าย เปลี่ยนเที่ยวบิน แม้กระทั่งขอเงินคืน ได้อย่างง่ายดาย</p> 
+                </div>
+                <div class="iwdiv3"> 
+                    <img src="static/image/wh2.png" class="wimg-bank wbg-bank">
+                    <h3>รับประกันความมั่นใจ</h3>
+                    <p>ฝ่ายลูกค้าสัมพันธ์ของเราพร้อมช่วยเหลือคุณตลอด 24 ชั่วโมง ไม่ว่าจะมีปัญหาอะไร ที่ไหน เมื่อไร เพราะคุณคือคนสำคัญของเรา  </p> 
+                </div>
+                <div class="iwdiv4"> 
+                    <img src="static/image/wh3.png" class="wimg-bank wbg-bank">
+                    <h3>ช่องทางชำระที่หลากหลาย</h3> 
+                    <p>เพิ่มความสะดวกสบายให้กับคุณ กับการชำระเงินหลากหลายช่องทาง ไม่ว่าจะเป็น 7 Eleven โอนผ่านธนาคาร บัตรเครดิต หรืออินเตอร์เน็ตแบงก์กิ้ง </p> 
+                </div>
+                <div class="iwdiv5"> 
+                    <img src="static/image/wh4.png" class="wimg-bank wbg-bank">
+                    <h3>ชำระเงินปลอดภัย</h3> 
+                    <p>ความปลอดภัยและความเป็นส่วนตัวของการทำธุรกรรมออนไลน์ของคุณจะได้รับการปกป้องด้วยเทคโนโลยี RapidSSL รับการยืนยันการจองและตั๋วอิเล็กทรอนิกส์ทางอีเมล์ในทันที</p> 
+                </div>
+                <div class="iwdiv6"> 
+                    <img src="static/image/wh5.png" class="wimg-bank wbg-bank">
+                    <h3>ราคาถูกที่สุดของแต่ละวัน</h3> 
+                    <p>จองตั๋วเครื่องบินราคาถูกแบบไม่มีค่าธรรมเนียม จ่ายเท่าที่เห็น แถมเปรียบเทียบราคาเที่ยวบินต่างๆบนผลลัพธ์การค้นหา</p> 
+                </div>
+                </div>
+        </div>
+    </div>
+
+    <script>
+        const slider = document.querySelector(".card-slider");
+        const prevBtn = document.querySelector(".btn-prev");
+        const nextBtn = document.querySelector(".btn-next");
+        
+        let scrollPos = 0;
+        let cardWidth = document.querySelector(".card").offsetWidth;
+        let numCards = document.querySelectorAll(".card").length;
+        
+        prevBtn.addEventListener("click", () => {
+          scrollPos -= cardWidth;
+          if (scrollPos < 0) {
+            scrollPos = 0;
+          }
+          slider.scrollTo({
+            left: scrollPos,
+            behavior: "smooth"
+          });
+        });
+        
+        nextBtn.addEventListener("click", () => {
+          scrollPos += cardWidth;
+          if (scrollPos > (numCards - 1) * cardWidth) {
+            scrollPos = (numCards - 1) * cardWidth;
+          }
+          slider.scrollTo({
+            left: scrollPos,
+            behavior: "smooth"
+          });
+        });    
+    </script>
+{% endblock%}

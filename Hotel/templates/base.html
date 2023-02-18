@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/31b5ab23c3.css" crossorigin="anonymous">
+    <title>
+        {% block title %}
+        {% endblock %}
+    </title>
+</head>
+<body>
+    <!--Header-->
+    <div class="line-header"></div>
+    <div class="container-header">
+        <div class="parent">
+            <div class="div1"> </div>
+            <div class="div2">
+                <a href="/"><img src="static/image/logo.png" class="img-logo"></a>
+            </div>
+            <div class="div3"><a href="/"><img src="static/image/namelogo.png" class="img-namelogo"></a></div>
+            <div class="div4"> 
+                <ul>
+                    <li><a class="active" href="https://www.traveloka.com/th-th/partnership"><i class="fa-solid fa-handshake"></i> ลงทะเบียนเป็นคู่ค้ากับเรา</a></li>
+                    <li><a href="/recorded"><i class="fa-solid fa-clipboard"></i> รายการที่บันทึก</a></li>
+                    <li><a href="/mybooking"><i class="fa-solid fa-bookmark"></i> การจองของฉัน</a></li>
+                    <li><a href="/login"><i class="fa-solid fa-right-to-bracket"></i> เข้าสู่ระบบ</a></li>
+                    <li><a href="/register" class="btn-register"><i class="fa-solid fa-registered"></i> ลงทะเบียน</a></li>
+                  </ul>
+            </div>
+        </div>
+    </div>
+    <div class="line-header"></div>
+    <!--Header-->
+    <!--Manicontent-->
+    {% block content %}
+    {% endblock %}
+     <!--Manicontent-->
+     <!--Footer-->
+     <footer class="container-footer">
+    
+        <div class="fparent">
+            <div class="fdiv1">
+                <img src="static/image/logo.png" class="img-logo">    
+                <img src="static/image/namelogo.png" class="fimg-namelogo"><br>
+                <h4 class="ftopic">ผู้ให้บริการชำระเงิน</h4>
+                <img src="static/image/bankbangkok.png" class="img-bank bg-bank">
+                <img src="static/image/bankkasrikhon.png" class="img-bank bg-bank">
+                <img src="static/image/bankkongsri.png" class="img-bank bg-bank"><br>
+                <img src="static/image/bankthai.png" class="img-bank bg-bank">
+                <img src="static/image/bankthaipanit.png" class="img-bank bg-bank">
+                <img src="static/image/bankvisa.png" class="img-bank bg-bank">
+            </div>
+            <div class="fdiv2">
+                <h4 class="ftopic">เกี่ยวกับ BookingKhram</h4>
+                <p class="flink">&nbsp;&nbsp;วิธีการจอง</p>
+                <p class="flink">&nbsp;&nbsp;ติดต่อเรา</p>
+                <p class="flink">&nbsp;&nbsp;ศูนย์ช่วยเหลือ</p>
+                <p class="flink">&nbsp;&nbsp;ตำแหน่งงาน</p>
+                <p class="flink">&nbsp;&nbsp;เกี่ยวกับเรา</p>
+                <h4 class="ftopic">ติดตามเราได้ทาง</h4>
+                <p class="flink">&nbsp;&nbsp;<i class="fa-brands fa-square-twitter"></i> Twitter</p>
+                <p class="flink">&nbsp;&nbsp;<i class="fa-brands fa-facebook"></i> Facebook</p>
+                <p class="flink">&nbsp;&nbsp;<i class="fa-brands fa-square-instagram"></i> Instagram</p>
+                <p class="flink">&nbsp;&nbsp;<i class="fa-brands fa-youtube"></i> Youtube</p>
+            </div>
+            <div class="fdiv3">
+                <h4 class="ftopic">อื่นๆ</h4>
+                <p class="flink">&nbsp;&nbsp;BookingKhram Affiliate</p>
+                <p class="flink">&nbsp;&nbsp;บล็อก</p>
+                <p class="flink">&nbsp;&nbsp;นโยบายความเป็นส่วนตัว</p>
+                <p class="flink">&nbsp;&nbsp;ข้อกำหนดและเงื่อนไข</p>
+                <p class="flink">&nbsp;&nbsp;ลงทะเบียนที่พักของคุณ</p>
+                <p class="flink">&nbsp;&nbsp;ห้องข่าว BookingKhram</p>
+            </div>
+            
+            <div class="fdiv4"> 
+                <p class="ftopic">@CopyBookingKhram</p>
+            </div>           
+        </div>
+   
+</footer>
+     <!--Footer-->
+    <script src="https://kit.fontawesome.com/31b5ab23c3.js" crossorigin="anonymous"></script>
+</body>
+</html>
