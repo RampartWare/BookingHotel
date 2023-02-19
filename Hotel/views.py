@@ -12,3 +12,5 @@ def recorded(request):
     return render(request, 'recorded.html')
 def mybooking(request):
     return render(request, 'mybooking.html')
+def about(request):
+    return render(request, 'about.html')
