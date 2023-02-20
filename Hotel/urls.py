@@ -9,5 +9,6 @@ urlpatterns = [
     path('register',views.register),
     path('mybooking',views.mybooking),
     path('recorded',views.recorded),
-    path('about', views.about)
+    path('about', views.about),
+    path('hotelcoco', views.hotelcoco)
 ]

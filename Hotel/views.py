@@ -14,3 +14,5 @@ def mybooking(request):
     return render(request, 'mybooking.html')
 def about(request):
     return render(request, 'about.html')
+def hotelcoco(request):
+    return render(request, 'hotelcoco.html')
