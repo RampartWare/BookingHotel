@@ -10,5 +10,9 @@ urlpatterns = [
     path('mybooking',views.mybooking),
     path('recorded',views.recorded),
     path('about', views.about),
-    path('hotelcoco', views.hotelcoco)
+    path('hotelcoco', views.hotelcoco),
+    path('hotelamphwa', views.hotelamphwa),
+    path('hotelarong', views.hotelarong),
+    path('hotelthegret', views.hotelthegret),
+    path('hotelroyal', views.hotelroyal)
 ]

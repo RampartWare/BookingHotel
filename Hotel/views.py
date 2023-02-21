@@ -16,3 +16,11 @@ def about(request):
     return render(request, 'about.html')
 def hotelcoco(request):
     return render(request, 'hotelcoco.html')
+def hotelamphwa(request):
+    return render(request, 'hotelamphwa.html')
+def hotelarong(request):
+    return render(request, 'hotelarong.html')
+def hotelthegret(request):
+    return render(request, 'hotelthegret.html')
+def hotelroyal(request):
+    return render(request, 'hotelroyal.html')
