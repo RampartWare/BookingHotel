@@ -22,9 +22,10 @@
         <div class="container-index-book">
             <div class="ibparent">
                 <div class="ibdiv1">
-                    <form>
+                    <form method="post" action="/">
+                        {% csrf_token %}
                         <label for="gsearch"><h4>ค้นหา:</h4></label>
-                        <input list="browsers" name="browser">
+                        <input list="browsers" name="hotelname">
                         <datalist id="browsers">
                             <option value="Coco view hotel">
                             <option value="โรงแรมอัมพวารี">
@@ -32,26 +33,27 @@
                             <option value="เดอะเกรซ อัมพวา รีสอร์ท">
                             <option value="โรงแรมรอยัลแลนด์ แม่กลอง">
                         </datalist>
-                    </form>
+                        <input type="text" name="phone" placeholder="063-xxx-xxxx" required>
+                    
                 </div>
                 <div class="ibdiv2">
                     <h4>ชื่อโรแรม</h4>
                 </div>
                 <div class="ibdiv3">
                     <h4>รายละเอียดการจองห้องพัก</h4>
-                    <form>
+                    
                         <label for="gsearch"><h4>ประเภท</h4></label>
                         <input list="classroom" name="classroom">
                         <datalist id="classroom">
                             <option value="Vip">
                             <option value="ธรรมดา">
                         </datalist>
-                        <label for="gsearch"><h4>เช็คอิน</h4></label>
-                        <input type="date" id="birthday" name="birthday">
+                        <!--<label for="gsearch"><h4>เช็คอิน</h4></label>
+                        <input type="date" id="birthday" name="checkin">-->
                         <label for="gsearch"><h4>เช็คเอาท์</h4></label>
-                        <input type="date" id="birthday" name="birthday">
+                        <input type="date" id="birthday" name="checkout">
                         <label for="quantity">จำนวนผู้เข้าพัก</label>
-                        <input type="number" id="quantity" name="quantity" min="1" max="100">
+                        <input type="number" id="quantity" name="quantity_people" min="1" max="100">
                         <input type="submit" value="จอง">
                     </form>
                  </div>

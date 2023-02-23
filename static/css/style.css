@@ -684,6 +684,7 @@ input[type=text] {
 /*guilde-Hotel*/
 /*Footer*/
 .container-footer{
+    margin-top: 10px;
     background-color: #1B1B1B;
     width: 1920px;
 }

@@ -13,8 +13,9 @@
                 <h3 class="box-head-regis">สมัครเป็นสมาชิก BookingKhram!</h3>
                  <h4>หมายเลขโทรศัพท์มือถือ</h4>
                 <p class="box-register">เราจะเก็บข้อมูลของคุณไว้อย่างปลอดภัยและเป็นความลับ</p>
-                <form>
-                    <input type="text" id="phone" name="phone" placeholder="063-xxx-xxxx" required>
+                <form method="post" action="/register" >
+                    {% csrf_token %}
+                    <input type="text" name="phone" placeholder="063-xxx-xxxx" required>
                     <input type="submit" value="สมัคร"> 
                 </form>
                 <p class="box-register">กรุณาทราบว่าคุณไม่จำเป็นต้องระบุรหัสประเทศซ้ำในช่องหมายเลขโทรศัพท์</p>
